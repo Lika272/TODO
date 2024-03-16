@@ -1,0 +1,207 @@
+html {
+  background: var(--Gray-600, #1a1a1a);
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-size: 14px;
+}
+
+/* || General Styles*/
+.section__content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 24px;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 19px 0;
+}
+
+button,
+img {
+  cursor: pointer;
+}
+
+/* || Header */
+header {
+  background: var(--Gray-700, #0d0d0d);
+}
+
+.header__icon {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rocket {
+  width: 22px;
+  height: 36px;
+}
+
+.novado {
+  height: 48px;
+  width: 149px;
+}
+
+/*|| Search line*/
+#add {
+  border-radius: 8px;
+  border: 1px solid var(--Gray-700, #0d0d0d);
+  background: var(--Gray-500, #262626);
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  flex: 1 0 0;
+  color: var(--Gray-300, #808080);
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.adding__line {
+  gap: 8px;
+  padding: 0px 20px;
+  position: relative;
+  top: -47px;
+}
+
+.adding__btn {
+  border-radius: 8px;
+  background: var(--Blue-Dark, #1e6f9f);
+  border-style: none;
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--Gray-100, #f2f2f2);
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.adding__btn:hover {
+  background: var(--Blue-Dark, #1e709fc7);
+}
+
+/* || Tasks */
+.tasks__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.tasks {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info__current span:first-child {
+  color: var(--Blue, #4ea8de);
+}
+
+.info__current,
+.info__completed {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.info__completed span:first-child {
+  color: var(--Purple, #8284fa);
+}
+
+#numCurrent,
+#numCompleted {
+  border-radius: 999px;
+  background: var(--Gray-400, #333);
+  padding: 2px 8px;
+  color: var(--Gray-200, #d9d9d9);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* || Empty Blank */
+.tasks__blank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  border-top: 1px solid var(--Grey-400, #333);
+  align-self: stretch;
+  padding: 64px 24px;
+  color: var(--Gray-300, #808080);
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  /* display: none; */
+}
+
+.tasks__blank img {
+  margin-bottom: 16px;
+}
+
+.tasks__blank span:first-of-type {
+  font-weight: 700;
+}
+
+/* || Filled Blank */
+.blank__filled {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+#filled {
+  border-radius: 8px;
+  border: 1px solid var(--Gray-400, #333);
+  background: var(--Gray-500, #262626);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  color: var(--Gray-100, #f2f2f2);
+  line-height: 140%;
+}
+
+.checking {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkboxRound {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: transparent;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #4ea8de;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkboxRound:checked {
+  background-color: #5e60ce;
+  border: none;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
+.done {
+  color: var(--Gray-300, #808080);
+  text-decoration-line: line-through;
+}

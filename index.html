@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="TODO" />
+    <meta name="author" content="Lika" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="photos/rocket.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wdth,wght@62.5..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>TODO</title>
+  </head>
+  <body>
+    <header>
+      <div class="section header__line">
+        <div class="section__content">
+          <div class="header__icon">
+            <img class="rocket" src="photos/rocket.svg" alt="rocket" />
+            <img class="novado" src="photos/novado.svg" alt="novado" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section">
+        <div class="section__content adding__line">
+          <input
+            type="text"
+            id="add"
+            placeholder="ცხოვრების რა ნაწილის დაგეგმვა გსურს?"
+          />
+          <button class="adding__btn" onclick="addList()">
+            დამატება <img src="photos/plus.svg" alt="plus" />
+          </button>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section__content tasks">
+          <div class="tasks__info">
+            <div class="info__current">
+              <span>დავალებები</span>
+              <span id="numCurrent">0</span>
+            </div>
+            <div class="info__completed">
+              <span>დასრულებული</span>
+              <span id="numCompleted">0</span>
+            </div>
+          </div>
+
+          <div class="tasks__blank">
+            <img src="photos/Clipboard.svg" alt="Clipboard" />
+            <span>დავალებები ჯერ არ გაქვთ</span>
+            <span
+              >შექმენით დავალებები და დაიწყეთ თქვენი ცხოვრების დაორგანიზება
+              ჩვენთან ერთად</span
+            >
+          </div>
+
+          <div class="blank__filled" id="supercontainer"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
